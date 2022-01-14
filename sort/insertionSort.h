@@ -23,7 +23,7 @@ template <typename T> void insertionSort2(T arr[], int n) {
     int j;
     for (j = i; j > 0 && cur < arr[j - 1]; j--)
       arr[j] = arr[j - 1]; // 减少了交换的次数
-    arr[j] = cur;
+    arr[j] = cur; 
   }
 }
 } // namespace algo
