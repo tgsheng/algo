@@ -5,6 +5,7 @@
 
 using std::swap;
 
+namespace algo {
 /*
     插入排序经过几趟扫描交换后，有序部分并不是全局的
     而选择排序和冒泡排序经过几趟扫描交换之后，有序部分是全局的
@@ -25,5 +26,6 @@ template <typename T> void insertionSort2(T arr[], int n) {
     arr[j] = cur;
   }
 }
+} // namespace algo
 
 #endif
