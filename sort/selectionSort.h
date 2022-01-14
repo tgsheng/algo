@@ -27,7 +27,7 @@ template <typename T> void selectionSort2(T arr[], int n) {
     for (int i = l + 1; i < r; i++)
       if (arr[i] < arr[minIdx])
         minIdx = i;
-      else if (arr[i] > arr[maxIdx])
+      else if (arr[maxIdx] < arr[i])
         maxIdx = i;
 
     swap(arr[l++], arr[minIdx]);
